@@ -1,12 +1,6 @@
-"""tensorflow/datasets is a library of datasets ready to use with TensorFlow.
+"""tiny-imagenet-tfds is a library to access tiny-imagenet dataset using tf.data.Dataset.
 
-tensorflow/datasets is a library of public datasets ready to use with
-TensorFlow. Each dataset definition contains the logic necessary to download and
-prepare the dataset, as well as to read it into a model using the
-`tf.data.Dataset` API.
-
-Usage outside of TensorFlow is also supported.
-See the README on GitHub for further documentation.
+This library contains the support to download, extract, and prepare the dataset as tfrecords.
 """
 
 import datetime
@@ -48,7 +42,7 @@ setup(
     author='Kapil Sachdeva',
     author_email='not@anemail.org',
     url='http://github.com/ksachdeva/tiny-imagenet-tfds',
-    download_url='https://github.com/tensorflow/datasets/tags',
+    download_url='https://github.com/ksachdeva/tiny-imagenet-tfds/tags',
     license='Apache 2.0',
     packages=find_packages(exclude=("example",)),
     package_data={
