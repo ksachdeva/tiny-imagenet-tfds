@@ -45,6 +45,15 @@ tf.compat.v1.enable_eager_execution()
 
 tiny_imagenet_builder = TinyImagenetDataset()
 
+# this call (download_and_prepare) will trigger the download of the dataset
+# and preparation (conversion to tfrecords)
+#
+# This will be done only once and on next usage tfds will
+# use the cached version on your host.
+#
+# You can pass optional argument to this method called
+# DownloadConfig (https://www.tensorflow.org/datasets/api_docs/python/tfds/download/DownloadConfig)
+# to customize the location where the dataset is downloaded, extracted and processed.
 tiny_imagenet_builder.download_and_prepare()
 
 train_dataset = tiny_imagenet_builder.as_dataset(split="train")
