@@ -3,7 +3,7 @@
 ## Introduction
 
 Tiny Imagenet is a scaled down version of ImageNet dataset. This dataset was created by
-folks at Standford for their course [http://cs231n.stanford.edu/](http://cs231n.stanford.edu/).
+folks at Stanford for their course [http://cs231n.stanford.edu/](http://cs231n.stanford.edu/).
 
 ### Salient Features
 
